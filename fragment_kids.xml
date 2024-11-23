@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KidsFragment">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Kids Collection"
+        android:textColor="#000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#000000"
+        android:text="ALL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <Button
+        android:id="@+id/button_nike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#000000"
+        android:text="NIKE"
+        app:layout_constraintStart_toEndOf="@id/button_all"
+        app:layout_constraintTop_toTopOf="@id/button_all" />
+
+    <Button
+        android:id="@+id/button_adidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#000000"
+        android:text="ADIDAS"
+        app:layout_constraintStart_toEndOf="@id/button_nike"
+        app:layout_constraintTop_toTopOf="@id/button_all" />
+
+    <Button
+        android:id="@+id/button_nbalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#000000"
+        android:text="BALANCE"
+        app:layout_constraintStart_toEndOf="@id/button_adidas"
+        app:layout_constraintTop_toTopOf="@id/button_all" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_shoes"
+        android:layout_width="403dp"
+        android:layout_height="639dp"
+        android:clipToPadding="false"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_all"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!-- RecyclerView για την παρουσίαση των παπουτσιών -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
